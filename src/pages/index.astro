@@ -13,37 +13,48 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+      <style>
+        .intro {
+          background-color: #fafafa;
+          padding: 3rem 2rem;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          max-width: 800px;
+          margin: 0 auto 3rem auto;
+        }
+        .intro h2 {
+          font-size: 1.9em;
+          color: #333;
+          margin-bottom: 1rem;
+        }
+        .intro p {
+          font-size: 1.0em;
+          line-height: 1.6;
+          color: #555;
+        }
+        .intro .highlight {
+          color: #0070f3;
+          font-weight: bold;
+        }
+        .intro a {
+          color: #0070f3;
+          text-decoration: none;
+        }
+        .intro a:hover {
+          text-decoration: underline;
+        }
+      </style>
+      
+      <section class="intro">
+        <h2>Welcome to My Development Blog 🐣</h2>
+        <p>
+          안녕하세요! 저는 <span class="highlight">개발자</span>를 준비 중인 학생입니다. 이 블로그는 제 개발 여정과 함께 배운 기술을 
+          공유하는 공간입니다. 프로그래밍에 대한 열정을 바탕으로 학습 과정을 기록하고 있습니다.
+        </p>
+        <p>
+          이 공간에서 웹 개발, 클라우드 기술 등 다양한 분야에서 배우고 성장하는 모습을 담아갈 예정입니다. 
+        </p>
+      </section>
 		</main>
 		<Footer />
 	</body>

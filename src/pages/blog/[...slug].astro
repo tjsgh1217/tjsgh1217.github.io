@@ -13,8 +13,44 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
+
+const posts = await getCollection('blog');
+const currentIndex = posts.findIndex(p => p.slug === post.slug);
+const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
+const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+
 ---
 
 <BlogPost {...post.data}>
 	<Content />
+  <footer class="post-navigation">
+    {nextPost && (
+			<a href={`/blog/${nextPost.slug}`} class="prev-post">다음 글: {nextPost.data.title} → </a>
+		)}
+		{prevPost && (
+			<a href={`/blog/${prevPost.slug}`} class="next-post">← 이전 글: {prevPost.data.title} </a>
+		)}
+		
+	</footer>
 </BlogPost>
+<style>
+	.post-navigation {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 2rem;
+		padding-top: 1rem;
+		border-top: 1px solid #ccc;
+	}
+	.prev-post, .next-post {
+	color: #0070f3;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.prev-post:hover, .next-post:hover {
+	background-color: #f0f0f0;
+	border-radius: 4px;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+}
+</style>
