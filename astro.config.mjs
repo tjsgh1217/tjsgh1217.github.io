@@ -8,5 +8,5 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   integrations: [mdx(), sitemap()],
   site: ' https://tjsgh1217.github.io',
-  // base: '/development-blog',
+  base: '/development-blog',
 });
