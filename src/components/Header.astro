@@ -12,7 +12,7 @@ import { SITE_TITLE } from '../consts';
 		</div>
 		<div class="social-links">
 			<a href="https://github.com/tjsgh1217" target="_blank">
-				<span class="sr-only">Go to Astro's GitHub repo</span>
+				<span class="sr-only">Go to seonho's GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
 						fill="currentColor"
@@ -20,8 +20,16 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
+      <a href="mailto:tjsgh1217@gmail.com" target="_blank">
+        <span class="sr-only">Send me an email</span>
+        <i class="fas fa-envelope" style="font-size: 32px;"></i>
+    </a>
+</div>
+    </a>
+</div>
 		</div>
 	</nav>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </header>
 <style>
 	header {
@@ -58,6 +66,10 @@ import { SITE_TITLE } from '../consts';
 	.social-links a {
 		display: flex;
 	}
+  .internal-links {
+    margin-left: auto;
+    margin-right: 100px;
+}
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;

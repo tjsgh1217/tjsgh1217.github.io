@@ -24,11 +24,11 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 <BlogPost {...post.data}>
 	<Content />
   <footer class="post-navigation">
-    {nextPost && (
-			<a href={`/blog/${nextPost.slug}`} class="prev-post">다음 글: {nextPost.data.title} → </a>
-		)}
-		{prevPost && (
+    {prevPost && (
 			<a href={`/blog/${prevPost.slug}`} class="next-post">← 이전 글: {prevPost.data.title} </a>
+		)}
+		{nextPost && (
+			<a href={`/blog/${nextPost.slug}`} class="prev-post">다음 글: {nextPost.data.title} → </a>
 		)}
 		
 	</footer>
