@@ -13,7 +13,6 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await post.render();
-
 const posts = await getCollection('blog');
 const currentIndex = posts.findIndex(p => p.slug === post.slug);
 const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
