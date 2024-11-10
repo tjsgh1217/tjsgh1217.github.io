@@ -1,12 +1,17 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header>
 	<nav>
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
+      <a class="ThemeIcon-toggle">  
+        <ThemeIcon />
+      </a>
+
 			<HeaderLink href="/">Home</HeaderLink>
 			<HeaderLink href="/blog">Post</HeaderLink>
 		</div>
@@ -79,7 +84,11 @@ import { SITE_TITLE } from '../consts';
     margin-left: auto;
     margin-right: 100px;
 }
-
+.ThemeIcon-toggle {
+      position:  relative;
+      right: 650px;
+      top: 9px;
+    }
 	@media (max-width: 720px) {
 		.social-links {
 			display: none;
