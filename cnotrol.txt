@@ -1,0 +1,18 @@
+npm run dev     Chrome   localhost:4321
+
+
+
+
+깃허브 푸시
+npm run build
+git add .
+git commit -m ""
+git push origin main
+
+git status    변경된 파일 확인
+
+
+vs code 사용자 설정
+git config --li      user.name, user.email 확인
+git config --global user.name
+git config --global user.email
