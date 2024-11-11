@@ -1,8 +1,9 @@
 <script
+  is:isline
   async
   src="https://www.googletagmanager.com/gtag/js?id=G-H7EXGSZG4H"
 ></script>
-<script>
+<script is:inline>
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
