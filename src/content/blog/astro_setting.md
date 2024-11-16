@@ -4,7 +4,7 @@ description: 'Create a blog with Astro'
 pubDate: '2024.11.9'
 ---
 
-Astro로 블로그 만드는 방법에 대해서 알아보겠습니다.
+**Astro로 블로그 만드는 방법에 대해서 알아보겠습니다.**
 
 Astro를 다운받기 위해서 npm이 필요하니 Node.js를 다운로드 합니다.  
 (yarn으로 가능합니다.)  
@@ -87,7 +87,9 @@ VS Code에서 설치한 프로젝트를 열어줍니다.
 Astro 문구를 변경하기 위해서는 `src/pages/index.astro`로 이동해서  
 body 태그의 h1을 수정해주면 변경 가능합니다.
 
-여기까지 Astro를 이용해 개발 환경 구성하기를 마치겠습니다.
+이상으로 Astro를 이용해 개발 환경 구성하기를 마치겠습니다.
+
+---
 
 <style>
   body {
