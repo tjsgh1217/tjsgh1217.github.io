@@ -10,6 +10,7 @@ pubDate: '2024.11.10'
 - **GitHub Repostiory(원격 저장소)** 는 GitHub 저장소이며 개발자가 로컬 저장소에서 작업한
   파일을 공유하고 협업할 수 있는 공간입니다.
 
+<br/>
 터미널에서 연결하고자 하는 프로젝트로 이동합니다.
 
 <br>
@@ -50,7 +51,7 @@ git pull origin main
 git add 명령어로 GitHub Repository에 올릴 파일을 추가해줍니다.
 
 `.` 은 모든 변경사항을 의미합니다.  
-원하는 파일만 올릴 시 `파일명`으로 하면 됩니다.
+원하는 파일만 올릴 시 `파일명` 으로 하면 됩니다.
 
 <div class="terminal">
 git add .
@@ -66,7 +67,7 @@ git commit -m ""
 </div>
 
 <br>
-GitHub Repository에 변경사항을 업로드합니다.
+git push 명령어로 GitHub Repository에 변경사항을 업로드합니다.
 
 `origin` GitHub(원격 저장소)의 위치를 가리키는 이름입니다.  
 `-u` upstream branch로 로컬 브랜치(main)과 원격 브랜치(branch)를 연결합니다.  
@@ -79,7 +80,7 @@ git push -u origin main
 <br>
 git push 에러가 발생하면 아래 명령어로 진행합니다.
 
-원격 저장소로 <span style="color: red; font-weight: bold;">강제</span> push하는 코드이기에 pull 하지 않은 변경사항은 <span style="color: red; font-weight: bold;">삭제</span>됩니다.
+원격 저장소로 <span style="color: red; font-weight: bold;">강제</span> push 하는 코드이기에 pull 하지 않은 변경사항은 <span style="color: red; font-weight: bold;">삭제</span>됩니다.
 
 <div class="terminal">
 git push origin +main

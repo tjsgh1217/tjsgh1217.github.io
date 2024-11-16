@@ -36,12 +36,12 @@ integrations: [sitemap()]
 
 </div>
 
-**@astrojs/sitemap**을 생성하려면 배포된 URL을 알아야 합니다.
+- **@astrojs/sitemap**을 생성하려면 배포된 URL을 알아야 합니다.
 
-Sitemap 설치로 `sitemap-index.xml` 파일과 `sitemap-0.xml`  
- 파일이 생성되었습니다.
+- Sitemap 설치로 `sitemap-index.xml` 파일과 `sitemap-0.xml`  
+  파일이 생성되었습니다.
 
-`sitemap-index.xml` 파일의 경로가 `sitemap-0.xml` 로 향하므로 우리는 `sitemap-index.xml` 로 링크를 해줍니다.
+- `sitemap-index.xml` 파일의 경로가 `sitemap-0.xml` 로 향하므로 우리는 `sitemap-index.xml` 로 링크를 해줍니다.
 
 링크는 `src/layouts/Layout.astro` 에 파일을 생성해 아래 코드를 붙여넣기  
  해줍니다.
@@ -50,8 +50,9 @@ Sitemap 설치로 `sitemap-index.xml` 파일과 `sitemap-0.xml`
   &lt;link rel="sitemap" href="/sitemap-index.xml" /&gt;
 </div>
 
+- 크롤러를 돕기 위해 robots.txt에 /sitemap-index.xml 을 추가해줍니다.
+
 <br>
-크롤러를 돕기 위해 robots.txt에 /sitemap-index.xml 을 추가해줍니다.
 
 `public/robots.txt` 파일에 아래의 코드를 작성합니다.
 
@@ -82,23 +83,23 @@ export const GET: APIRoute = ({ site }) => {
 
 </div>
 
-이제 **Google Search Console**에 접속합니다.
+- 이제 **Google Search Console**에 접속합니다.
 
-속성 유형은 **URL 접두어**를 선택하고 당신의 site 도메인을 입력 후 계속합니다.
+- 속성 유형은 **URL 접두어**를 선택하고 당신의 site 도메인을 입력 후 계속합니다.
 
-소유권 확인은 **HTML태그 (사이트 홈페이지에 메타태그 추가)** 를 선택합니다.
+- 소유권 확인은 **HTML태그 (사이트 홈페이지에 메타태그 추가)** 를 선택합니다.
 
-메타태그를 복사한 후 `src/pages/index.astro` 파일의  
-**head** 태그에 붙여넣기 합니다.
+- 메타태그를 복사한 후 `src/pages/index.astro` 파일의  
+  &lt;**head**&gt; 태그에 붙여넣기 합니다.
 
-다시 Google Search Console로 돌아가 확인을 눌러 완료합니다.
+- 다시 Google Search Console로 돌아가 확인을 눌러 완료합니다.
 
-소유권이 확인되었으면 좌측 Sitemaps 리스트에 들어가 새 사이트맵을 추가합니다.
+- 소유권이 확인되었으면 좌측 Sitemaps 리스트에 들어가 새 사이트맵을 추가합니다.
 
-사이트맵 URL은 `https://<SITE>.github.io/sitemap-index.xml` 로  
- 제출합니다.
+- 사이트맵 URL은 `https://<SITE>.github.io/sitemap-index.xml` 로  
+  제출합니다.
 
-전과 같이 SITE에 `astro.config.mjs` 파일에 작성한 site 도메인 값을 넣어줍니다.
+- 전과 같이 SITE에 `astro.config.mjs` 파일에 작성한 site 도메인 값을 넣어줍니다.
 
 제출된 사이트맵 상태가 성공으로 바뀌면 등록이 완료됩니다.
 

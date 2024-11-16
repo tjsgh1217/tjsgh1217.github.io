@@ -53,7 +53,8 @@ gtag('js', new Date());
 - Google Analytics로 돌아가 적용을 누릅니다.
 
 - 혹시 웹사이트를 인식하지 못하면 `src/pages/index.astro` 파일의
-  **head** 태그 안에 붙여넣기 하시면 됩니다.
+  &lt;**head**&gt;  
+  태그 안에 붙여넣기 하시면 됩니다.
 
 이상으로 Google Analytics 연결하는 방법을 마치겠습니다.
 
