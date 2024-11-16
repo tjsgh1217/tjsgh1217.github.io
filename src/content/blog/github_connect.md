@@ -16,7 +16,22 @@ git commit -m ""
 git push origin main
 
 <style>
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
 
+  .terminal {
+    background-color: #2d2d2d; 
+    color: #ffffff; 
+    padding: 15px 10px 10px 20px;
+    border-radius: 5px;
+    font-family: 'Courier New', monospace;
+    font-size: 17px;
+    line-height: 1.2;
+    overflow-x: auto;
+    margin: 15px 0;
+  }
 </style>
 
 <script
