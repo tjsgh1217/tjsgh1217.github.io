@@ -1,7 +1,7 @@
 ---
 title: 'Astro로 GitHub Pages를 이용해 배포'
 description: 'Deploy using GitHub Pages with Astro'
-pubDate: '2024.11.3'
+pubDate: '2024.11.11'
 ---
 
 **Astro를 GitHub Pages로 배포하는 방법에 대해 알아보겠습니다.**
