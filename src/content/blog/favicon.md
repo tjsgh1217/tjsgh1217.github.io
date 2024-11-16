@@ -1,10 +1,10 @@
 ---
-title: 'Astro-utterances 기능 구현'
-description: 'Astro comment'
-pubDate: '2024.11.14'
+title: 'Astro 웹사이트에 favicon 설정하기'
+description: 'Setting up a favicon on your website'
+pubDate: '2024.11.16'
 ---
 
-utterances 구현하는 방법
+Google analytics
 
 <style>
 

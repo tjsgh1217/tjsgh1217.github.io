@@ -1,10 +1,10 @@
 ---
-title: 'Astro-utterances 기능 구현'
-description: 'Astro comment'
-pubDate: '2024.11.14'
+title: 'GitHub contributions commit 에러 해결방법'
+description: 'GitHub contributions commit Error solutaion'
+pubDate: '2024.11.15'
 ---
 
-utterances 구현하는 방법
+Google analytics
 
 <style>
 
