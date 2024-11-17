@@ -25,7 +25,7 @@ npm install @astrojs.sitemap
 
 <br>
 
-설치가 완료되면 `astro.config.mjs` 에 아래 코드가 생성된 것을 볼 수 있습니다.
+설치가 완료되면 `astro.config.mjs` 파일에 아래 코드가 생성된 것을 볼 수 있습니다.
 
 <div class="terminal">
 import sitemap from '@astrojs/sitemap';

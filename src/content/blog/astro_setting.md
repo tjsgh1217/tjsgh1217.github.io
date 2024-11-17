@@ -85,7 +85,7 @@ VS Code에서 설치한 프로젝트를 열어줍니다.
 - 웹사이트 미리 보기는 `localhost:4321` 로 접속하여 볼 수 있습니다.
 - (Empty)로 시작한 프로젝트는 빈 창에 Astro 문구만 볼 수 있습니다.
 
-- Astro 문구를 변경하기 위해서는 `src/pages/index.astro` 로 이동해서  
+- Astro 문구를 변경하기 위해서는 `src/pages/index.astro` 파일로 이동해서  
   &lt;**body**&gt; 태그의 &lt;**h1**&gt;을 수정해주면 변경 가능합니다.
 
 이상으로 Astro를 이용해 개발 환경 구성하기를 마치겠습니다.

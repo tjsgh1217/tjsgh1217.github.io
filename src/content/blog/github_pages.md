@@ -6,7 +6,7 @@ pubDate: '2024.11.11'
 
 **Astro site를 GitHub Pages에 배포하는 방법에 대해 알아보겠습니다.**
 
-`astro.config.mjs` 의 defineConfig 함수 안에 아래의 코드를 넣어줍니다.
+`astro.config.mjs` 파일의 defineConfig 함수 안에 아래의 코드를 넣어줍니다.
 
 <div class="terminal">
 site: 'https://username.github.io'
