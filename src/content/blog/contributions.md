@@ -61,6 +61,7 @@ git config -li
 h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
+    color: #34495E;
 }
 .terminal {
     background-color: #2d2d2d; 

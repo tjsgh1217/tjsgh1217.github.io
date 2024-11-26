@@ -106,6 +106,7 @@ VS Code에서 설치한 프로젝트를 열어줍니다.
   h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #34495E;
   }
 
   .terminal {

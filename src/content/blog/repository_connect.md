@@ -94,6 +94,7 @@ git push origin +main
 h1 {
     font-size: 2em;
     margin-bottom: 20px;
+    color: #34495E;
 }
 
 
