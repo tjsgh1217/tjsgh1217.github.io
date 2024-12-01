@@ -14,9 +14,16 @@ type Props = CollectionEntry<'blog'>;
 const post = Astro.props;
 const { Content } = await post.render();
 const posts = await getCollection('blog');
-const currentIndex = posts.findIndex(p => p.slug === post.slug);
-const prevPost = currentIndex > 0 ? posts[currentIndex - 1] : null;
-const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : null;
+
+const sortedPosts = posts.sort((a, b) => {
+	const dateA = a.data.pubDate ? new Date(a.data.pubDate).getTime() : 0;
+	const dateB = b.data.pubDate ? new Date(b.data.pubDate).getTime() : 0;
+	return dateA - dateB;
+});
+
+const currentIndex = sortedPosts.findIndex(p => p.slug === post.slug);
+const prevPost = currentIndex > 0 ? sortedPosts[currentIndex - 1] : null;
+const nextPost = currentIndex < sortedPosts.length - 1 ? sortedPosts[currentIndex + 1] : null;
 
 ---
 
@@ -24,10 +31,14 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 	<Content />
   <footer class="post-navigation">
     {prevPost && (
-			<a href={`/blog/${prevPost.slug}`} class="next-post">← 이전 글: {prevPost.data.title} </a>
+			<a href={`/blog/${prevPost.slug}`} class="next-post">← 이전 글
+<br/>      
+       {prevPost.data.title} </a>
 		)}
 		{nextPost && (
-			<a href={`/blog/${nextPost.slug}`} class="prev-post">다음 글: {nextPost.data.title} → </a>
+			<a href={`/blog/${nextPost.slug}`} class="prev-post">다음 글 →
+<br/>
+       {nextPost.data.title} </a>
 		)}
 		
 	</footer>
@@ -39,6 +50,7 @@ const nextPost = currentIndex < posts.length - 1 ? posts[currentIndex + 1] : nul
 		margin-top: 2rem;
 		padding-top: 1rem;
 		border-top: 1px solid #ccc;
+    gap: 6rem;
 	}
 	.prev-post, .next-post {
 	color: #0070f3;
