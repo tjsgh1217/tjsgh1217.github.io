@@ -6,7 +6,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx(), sitemap()],
   site: 'https://tjsgh1217.github.io',
+  integrations: [mdx(), sitemap()],
   // base: '/development-blog',
 });
