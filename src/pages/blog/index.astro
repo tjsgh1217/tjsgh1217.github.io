@@ -108,14 +108,30 @@ const posts = (await getCollection('blog')).sort(
     color: #FF5722; /* 마우스 올렸을 때 색상 변경 */
 }
 @media (max-width: 720px) {
-		ul li {
-			width: 100%; 
-			text-align: center;
-		}
-		ul li .title {
-			font-size: 1.563em;
-		}
-	}
+  ul li {
+    width: 100%; 
+    text-align: left; /* 웹과 동일한 정렬 */
+    margin-bottom: 3rem; /* 동일한 여백 */
+  }
+  ul li .title {
+    font-size: 1.25em; /* 폰트 크기 통일 */
+  }
+  nav {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    width: 200px; /* 웹과 동일한 너비 */
+    height: 50vh;
+    padding-top: 20px;
+  }
+  nav ul {
+    padding-left: 30px;
+  }
+  nav ul li {
+    margin-bottom: 15px;
+  }
+}
+
 		</style>
 	</head>
 	<body>
