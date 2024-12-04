@@ -47,11 +47,11 @@ const posts = (await getCollection('blog')).sort(
 	}
 	ul li {
 		width: 100%; 
-		margin-bottom: 3rem;
+		margin-bottom: 4rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 		border-radius: 12px; 
 		overflow: hidden;
-    padding: 1rem;
+    padding: 0.7rem;
 	}
 	ul li * {
 		text-decoration: none;
@@ -64,7 +64,7 @@ const posts = (await getCollection('blog')).sort(
 	.title {
 		margin: 0;
 		color: rgb(var(--black));
-		line-height: 1;
+		line-height: 1.6;
 	}
 	.date {
 		margin: 0;
@@ -151,7 +151,7 @@ const posts = (await getCollection('blog')).sort(
         astroBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 2300,
+            top: 2750,
             behavior: 'smooth'
           });
         });
@@ -164,7 +164,7 @@ const posts = (await getCollection('blog')).sort(
         sqlBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 1180,
+            top: 1400,
             behavior: 'smooth'
           });
         });
