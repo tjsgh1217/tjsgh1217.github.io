@@ -37,7 +37,8 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 700px;
+				width: 600px;
+        
         
 			}
 			ul {
@@ -117,13 +118,13 @@ const posts = (await getCollection('blog')).sort(
 		</style>
 	</head>
 	<body>
-		<Header />
     <nav>
 			<ul>
 				<li><a href="#" id="astro-btn">Astro Blog 가이드</a></li>
 				<li><a href="#" id="sql-btn">SQL</a></li>
 			</ul>
 		</nav>
+    <Header />
 		<main>
 			<section>
 				<ul>
@@ -152,7 +153,7 @@ const posts = (await getCollection('blog')).sort(
         astroBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 2000,
+            top: 2300,
             behavior: 'smooth'
           });
         });
@@ -165,7 +166,7 @@ const posts = (await getCollection('blog')).sort(
         sqlBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 880,
+            top: 1180,
             behavior: 'smooth'
           });
         });
