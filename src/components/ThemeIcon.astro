@@ -37,7 +37,7 @@
 
 .sun {
   left: 6px;
-  color: #fb923c; /* 태양 아이콘 색상 */
+  color: #fb923c; 
 }
 
 .moon {
@@ -45,7 +45,7 @@
   color: #808080;
 }
 
-/* 이동하는 원 */
+
 .theme-toggle::before {
   content: "";
   position: absolute;
@@ -58,7 +58,7 @@
   transition: transform 0.3s ease;
 }
 
-/* 다크모드 스타일 */
+
 :global(.dark) .theme-toggle {
   background: #383838;
 }
@@ -67,7 +67,7 @@
   transform: translateX(calc(var(--toggle-width) - var(--circle-size) - var(--toggle-padding) * 2));
 }
 
-/* 아이콘 표시/숨김 처리 */
+
 .sun {
   opacity: 1;
   transition: opacity 0.3s ease;
@@ -99,23 +99,23 @@ const handleToggleClick = () => {
 document.getElementById("themeToggle")
   ?.addEventListener("click", handleToggleClick);
 
-  // 초기 테마 설정
+  
 const theme = (() => {
-  // localStorage에서 테마를 가져오되, null일 경우 기본값 설정
+  
   const storedTheme = localStorage.getItem('theme');
   if (storedTheme) {
-    return storedTheme; // 'light' 또는 'dark' 반환
+    return storedTheme; 
   }
 
-  // 만약 localStorage에 값이 없으면 시스템 설정을 기준으로 반환
+  
   if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    return 'dark'; // 시스템 설정이 다크 모드인 경우
+    return 'dark'; 
   }
 
-  return 'light'; // 기본값으로 라이트 모드
+  return 'light'; 
 })();
 
-// 페이지 로드 시, 테마 설정 적용
+
 if (theme === 'light') {
   document.documentElement.classList.remove('dark');
 } else {
