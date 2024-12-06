@@ -141,5 +141,13 @@ hr {
 }
 
 html.dark {
+  background-color: black;
+}
+
+html.dark body {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+html.dark body img {
   filter: invert(1) hue-rotate(180deg);
 }
