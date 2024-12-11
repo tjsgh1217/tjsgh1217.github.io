@@ -1,10 +1,11 @@
 ---
-title: 'Astro Site를 GitHub Pages에 배포'
+title: 'Astro Site를 인터넷에 배포하는 방법'
 description: 'Deploy using GitHub Pages with Astro'
 pubDate: '2024.11.11'
 ---
 
-**Astro site를 GitHub Pages에 배포하는 방법에 대해 알아보겠습니다.**
+**Astro site를 인터넷에 배포하는 방법에 대해 알아보겠습니다.  
+저는 GitHub Pages를 사용하겠습니다.**
 
 `astro.config.mjs` 파일의 defineConfig 함수 안에 아래의 코드를 넣어줍니다.
 

@@ -1,5 +1,5 @@
 ---
-title: 'Astro-utterances 기능 구현'
+title: 'Astro-Blog 댓글 기능 구현하는 방법'
 description: 'Astro comment'
 pubDate: '2024.11.14'
 ---
