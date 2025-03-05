@@ -1,5 +1,5 @@
 ---
-title: 'Coding Test Summary'
+title: 'Coding Test Summary (Javascript)'
 description: 'algorithm'
 pubDate: '2025.03.01'
 ---
