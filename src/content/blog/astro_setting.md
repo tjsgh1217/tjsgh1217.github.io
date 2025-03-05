@@ -1,5 +1,5 @@
 ---
-title: 'Astro로 Blog 만들기'
+title: 'Astro로 블로그 만들기'
 description: 'Create a blog with Astro'
 pubDate: '2024.11.9'
 ---
