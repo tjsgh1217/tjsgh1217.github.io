@@ -1,8 +1,20 @@
 ---
-title: 'Python 문법 정리'
+title: 'Python 기초 정리'
 description: 'algorithm'
-pubDate: '2025.03.06'
+pubDate: '2025.03.05'
 ---
+
+<div id="sidebar">
+    <strong class="sidebar-title" style="color:black">목차</strong>
+    <ul class="sidebar-list">
+        <li><a href="#변수-선언" class="sidebar-link" onclick="scrollToSection(event, '변수-선언')">변수 선언</a></li>
+        <li><a href="#함수-정의" class="sidebar-link" onclick="scrollToSection(event, '함수-정의')">함수 정의</a></li>
+        <li><a href="#조건문" class="sidebar-link" onclick="scrollToSection(event, '조건문')">조건문</a></li>
+        <li><a href="#반복문" class="sidebar-link" onclick="scrollToSection(event, '반복문')">반복문</a></li>
+        <li><a href="#리스트" class="sidebar-link" onclick="scrollToSection(event, '리스트')">리스트</a></li>
+        <li><a href="#클래스" class="sidebar-link" onclick="scrollToSection(event, '클래스')">클래스</a></li>
+    </ul>
+</div>
 
 #### 변수 선언
 
@@ -125,7 +137,7 @@ print(add(1, 2))  # 3
 <br>
 <br>
 
-#### 조건문 (if문)
+#### 조건문
 
 <br>
 
@@ -328,6 +340,67 @@ print(kim.introduce_age())      # "저는 25살입니다."
 
       }
 </style>
+<style>
+    #sidebar {
+        position: fixed;
+        top: 20%;
+        left: 20px;
+        width: 170px;
+        background: #f9f9f9;
+        padding: 5px 5px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+        text-align: center;
+        bottom: 34%;
+    }
+
+.sidebar-title {
+    text-align: center;
+    display: block;
+    color: #9b59b6;
+}
+
+.sidebar-list {
+    list-style: none;
+    padding: 10px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #9b59b6;
+    display: block;
+    padding: 3px 0;
+}
+
+#sidebar:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+html {
+        scroll-behavior: smooth;
+    }
+
+#변수-선언, #함수-정의, #조건문, #반복문, #리스트, #클래스 {
+    scroll-margin-top: 29px;
+}
+
+</style>
+
+<script>
+function scrollToSection(event, id) {
+    event.preventDefault();
+    const targetElement = document.getElementById(id);
+    if (targetElement) {
+        targetElement.scrollIntoView({
+            behavior: 'smooth', 
+            block: 'start' 
+        });
+    }
+}
+</script>
 
 <script src="https://utteranc.es/client.js"
         repo="tjsgh1217/tjsgh1217.github.io"
