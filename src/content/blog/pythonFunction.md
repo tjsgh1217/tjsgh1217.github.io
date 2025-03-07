@@ -13,17 +13,17 @@ pubDate: '2025.03.06'
     </tr>
   </thead>
   <tbody>
-    <tr class ="highlight">
+    <tr>
       <td>최대값</td>
       <td><code>max()</code></td>
       <td>가장 큰 값 반환</td>
     </tr>
-    <tr class ="highlight">
+    <tr>
       <td>최소값</td>
       <td><code>min()</code></td>
       <td>가장 작은 값 반환</td>
     </tr>
-    <tr class ="highlight">
+    <tr>
       <td>합계</td>
       <td><code>sum()</code></td>
       <td>리스트나 튜플 합계</td>
@@ -68,7 +68,7 @@ pubDate: '2025.03.06'
     </tr>
   </thead>
   <tbody>
-    <tr>
+    <tr class ="highlight">
       <td>요소 추가</td>
       <td><code>append()</code></td>
       <td>끝에 요소 추가</td>
@@ -164,7 +164,7 @@ pubDate: '2025.03.06'
       <td><code>find()</code></td>
       <td>특정 문자 위치 반환</td>
     </tr>
-    <tr>
+    <tr class ="highlight">
       <td>포함 여부</td>
       <td><code>in</code></td>
       <td>문자열 포함 여부 확인</td>
