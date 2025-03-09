@@ -13,6 +13,32 @@ pubDate: '2025.03.06'
     </tr>
   </thead>
   <tbody>
+      <tr>
+    <td>정수 변환</td>
+    <td><code>int()</code></td>
+    <td>문자열 또는 실수를 정수로 변환</td>
+  </tr>
+  <tr>
+    <td>문자열 변환</td>
+    <td><code>str()</code></td>
+    <td>숫자나 객체를 문자열로 변환</td>
+  </tr>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>기능</th>
+      <th>함수</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <td>최대값</td>
       <td><code>max()</code></td>
@@ -27,6 +53,12 @@ pubDate: '2025.03.06'
       <td>합계</td>
       <td><code>sum()</code></td>
       <td>리스트나 튜플 합계</td>
+    </tr>
+    <tr class = "highlight">
+      <td>곱셈</td>
+      <td><code>prod()</code></td>
+      <td>리스트나 튜플의 모든 요소 곱하기</td>
+    </tr>
     <tr>
       <td>절대값</td>
       <td><code>abs()</code></td>
@@ -143,6 +175,11 @@ pubDate: '2025.03.06'
       <td>길이</td>
       <td><code>len()</code></td>
       <td>문자열 길이 반환</td>
+    </tr>
+    <tr>
+      <td>공백 제거</td>
+      <td><code>strip()</code></td>
+      <td>문자열의 앞, 뒤 공백 제거</td>
     </tr>
     <tr>
       <td>나누기</td>

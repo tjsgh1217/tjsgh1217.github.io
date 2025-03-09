@@ -35,6 +35,35 @@ def solution(arr):
 
 ---
 
+<br>
+
+##### else 구문에 조건 작성 불가
+
+<br>
+
+```python
+arr = [1, 2, 3, 20, 40, 55, 73]
+
+def solution(arr):
+    answer = []
+    for i in arr:
+        if i >= 30 and i % 2 == 0:  # 30 이상이고 짝수
+            answer.append(i / 2)    # i를 2로 나눈 값을 리스트에 추가
+        elif i < 30 and i % 2 == 1: # 30 미만이고 홀수
+            answer.append(i * 2)    # i를 2로 곱한 값을 리스트에 추가
+        else:  # 조건 작성 불가
+            answer.append(i)
+    return answer
+
+# [2, 2, 6, 20, 20, 55, 73]
+```
+
+<br>
+
+<br>
+
+---
+
 <style>
   h1 {
       font-size: 1.8em;
