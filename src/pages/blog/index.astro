@@ -116,8 +116,9 @@ const posts = (await getCollection('blog')).sort(
 	<body>
     <nav>
 			<ul>
-				<li><a href="#" id="astro-btn">Astro Blog 가이드</a></li>
+        <li><a href="#" id="python-btn">Python</a></li>
 				<li><a href="#" id="sql-btn">SQL</a></li>
+        <li><a href="#" id="astro-btn">Astro</a></li>
 			</ul>
 		</nav>
     <Header />
@@ -143,13 +144,13 @@ const posts = (await getCollection('blog')).sort(
 		<Footer />
     <script>
       document.addEventListener('DOMContentLoaded', () => {
-        const astroBtn = document.getElementById('astro-btn');
+        const pythonBtn = document.getElementById('python-btn');
 
-        if (astroBtn) {
-        astroBtn.addEventListener('click', (e) => {
+        if (pythonBtn) {
+        pythonBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 2460,
+            top: 130,
             behavior: 'smooth'
           });
         });
@@ -168,6 +169,20 @@ const posts = (await getCollection('blog')).sort(
         });
       }
       });
+      document.addEventListener('DOMContentLoaded', () => {
+        const astroBtn = document.getElementById('astro-btn');
+
+        if (astroBtn) {
+        astroBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({
+            top: 2460,
+            behavior: 'smooth'
+          });
+        });
+      }
+      });
+    
     </script>
 	</body>
 </html>
