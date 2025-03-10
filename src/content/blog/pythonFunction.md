@@ -116,9 +116,9 @@ pubDate: '2025.03.06'
       <td>특정 요소 제거</td>
     </tr>
     <tr>
-      <td>요소 꺼내기</td>
+      <td>요소 제거 & 반환</td>
       <td><code>pop()</code></td>
-      <td>마지막 요소 꺼내기</td>
+      <td>마지막 요소 제거하고 반환</td>
     </tr>
     <tr>
       <td>요소 개수 세기</td>
@@ -241,11 +241,6 @@ pubDate: '2025.03.06'
       <td>요소 추가</td>
       <td><code>update()</code></td>
       <td>키-값 추가</td>
-    </tr>
-    <tr>
-      <td>요소 제거</td>
-      <td><code>pop()</code></td>
-      <td>특정 키 제거</td>
     </tr>
     <tr>
       <td>기본값 반환</td>
