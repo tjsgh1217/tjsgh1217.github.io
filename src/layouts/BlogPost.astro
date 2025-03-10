@@ -10,7 +10,7 @@ type Props = CollectionEntry<'blog'>['data'];
 const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
-<html lang="en">
+<html lang="ko">
 	<head>
     
 		<BaseHead title={title} description={description} />
@@ -21,11 +21,13 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 				margin: 0;
 			}
 			.prose {
-				width: 700px;
+				width: 800px;
 				max-width: calc(100% - 2em);
 				margin: auto;
 				padding: 1em;
 				color: rgb(var(--gray-dark));
+        font-size: 1.1rem;
+      
 			}
 			.title {
 				margin-bottom: 1em;
@@ -43,6 +45,15 @@ const { title, description, pubDate, updatedDate } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+     @media {
+         header  {
+          overflow-x: auto;
+  }
+      .prose {
+        overflow-x: auto;
+        font-size: 0.9rem;
+      }
+     }
 		</style>
 	</head>
 

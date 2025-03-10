@@ -12,7 +12,7 @@ const posts = (await getCollection('blog')).sort(
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 	<head>
 
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
@@ -29,6 +29,7 @@ const posts = (await getCollection('blog')).sort(
 <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json">
+<link rel="sitemap" href="/sitemap-index.xml" />
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
@@ -103,8 +104,13 @@ const posts = (await getCollection('blog')).sort(
 			}
       nav ul li a:hover {
     color: #FF5722; 
-}
-
+      }
+      @media {
+        ul li {
+          width:auto;
+          margin-bottom: 40px;
+        }
+      }
 		</style>
 	</head>
 	<body>
@@ -143,7 +149,7 @@ const posts = (await getCollection('blog')).sort(
         astroBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 2540,
+            top: 2460,
             behavior: 'smooth'
           });
         });
@@ -156,7 +162,7 @@ const posts = (await getCollection('blog')).sort(
         sqlBtn.addEventListener('click', (e) => {
           e.preventDefault();
           window.scrollTo({
-            top: 580,
+            top: 800,
             behavior: 'smooth'
           });
         });
