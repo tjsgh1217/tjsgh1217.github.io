@@ -206,6 +206,16 @@ pubDate: '2025.03.06'
       <td><code>in</code></td>
       <td>문자열 포함 여부 확인</td>
     </tr>
+    <tr>
+      <td>문자열 시작 확인</td>
+      <td><code>startswith()</code></td>
+      <td>문자열이 특정 접두사로 시작하는지 확인</td>
+    </tr>
+    <tr>
+      <td>문자열 끝 확인</td>
+      <td><code>endswith()</code></td>
+      <td>문자열이 특정 접미사로 끝나는지 확인</td>
+    </tr>
   </tbody>
 </table>
 
