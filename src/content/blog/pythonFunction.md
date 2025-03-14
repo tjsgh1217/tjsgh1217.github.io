@@ -133,9 +133,9 @@ pubDate: '2025.03.06'
     <tr>
       <td>정렬</td>
       <td><code>sort()</code></td>
-      <td>오름차순 정렬</td>
+      <td>문자열과 숫자를 오름차순 정렬</td>
     </tr>
-    <tr>
+    <tr class ="highlight">
       <td>역순 정렬</td>
       <td><code>reverse()</code></td>
       <td>리스트 뒤집기</td>
