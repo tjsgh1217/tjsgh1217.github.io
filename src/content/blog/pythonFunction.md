@@ -141,9 +141,14 @@ pubDate: '2025.03.06'
       <td>리스트 뒤집기</td>
     </tr>
     <tr>
-      <td>깊은 복사</td>
+      <td>복사</td>
       <td><code>copy()</code></td>
       <td>리스트 복사</td>
+    </tr>
+    <tr>
+      <td>새 리스트 생성</td>
+      <td><code>list()</code></td>
+      <td>기존 리스트의 값을 복사하여 새 리스트를 생성</td>
     </tr>
   </tbody>
 </table>
