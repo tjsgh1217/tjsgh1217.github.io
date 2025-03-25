@@ -118,6 +118,7 @@ const posts = (await getCollection('blog')).sort(
 			<ul>
         <li><a href="#" id="python-btn">Python</a></li>
 				<li><a href="#" id="sql-btn">SQL</a></li>
+        <li><a href="#" id="github-btn">GitHub</a></li>
         <li><a href="#" id="astro-btn">Astro</a></li>
 			</ul>
 		</nav>
@@ -169,6 +170,21 @@ const posts = (await getCollection('blog')).sort(
         });
       }
       });
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const githubBtn = document.getElementById('github-btn');
+
+        if (githubBtn) {
+        githubBtn.addEventListener('click', (e) => {
+          e.preventDefault();
+          window.scrollTo({
+            top: 2600,
+            behavior: 'smooth'
+          });
+        });
+      }
+      });
+
       document.addEventListener('DOMContentLoaded', () => {
         const astroBtn = document.getElementById('astro-btn');
 

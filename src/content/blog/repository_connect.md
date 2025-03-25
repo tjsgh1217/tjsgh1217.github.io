@@ -1,5 +1,5 @@
 ---
-title: '로컬 저장소와 원격 저장소 연결하는 방법'
+title: 'GitHub & VS Code 연동 가이드'
 description: 'local repository-remote repository connection'
 pubDate: '2024.11.10'
 ---
