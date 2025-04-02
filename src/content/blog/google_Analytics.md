@@ -29,24 +29,22 @@ pubDate: '2024.11.13'
 
 `src/google_analytics` 에 파일을 생성 해 아래 코드를 붙여넣기합니다.
 
-<div class="terminal">
-
-&lt;script  
- is:isline  
- async  
- src="http<hi>s://ww<hi>w.googletagmanager.com/gtag/js?id=VALUE"&gt;  
+```
+&lt;script
+ is:isline
+ async
+ src="http<hi>s://ww<hi>w.googletagmanager.com/gtag/js?id=VALUE"&gt;
 &lt;/script&gt;
 
-&lt;script is:inline>  
- window.dataLayer = window.dataLayer || [];  
- function gtag() {  
- dataLayer.push(arguments);  
- }  
-gtag('js', new Date());  
- gtag('config', 'VALUE');  
+&lt;script is:inline>
+ window.dataLayer = window.dataLayer || [];
+ function gtag() {
+ dataLayer.push(arguments);
+ }
+gtag('js', new Date());
+ gtag('config', 'VALUE');
 &lt;/script&gt;
-
-</div>
+```
 
 - **VALUE** 값에 개인의 ID 값을 대입합니다.
 
@@ -68,17 +66,6 @@ h1 {
 }
 
 
-.terminal {
-    background-color: #2d2d2d; 
-    color: #ffffff; 
-    padding: 15px 10px 10px 20px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    font-size: 17px;
-    line-height: 1.2;
-    overflow-x: auto;
-    margin: 15px 0;
-}
 </style>
 
 <script

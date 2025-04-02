@@ -9,9 +9,9 @@ pubDate: '2024.11.11'
 
 `astro.config.mjs` 파일의 defineConfig 함수 안에 아래의 코드를 넣어줍니다.
 
-<div class="terminal">
+```
 site: 'https://username.github.io'
-</div>
+```
 
 <br>
 
@@ -21,40 +21,40 @@ site: 'https://username.github.io'
 
 `.github/workflows/deploy.yml` 경로에 새 파일을 만들고 아래 코드를 붙여넣습니다.
 
-<div class="terminal">
+```
 name: Deploy to GitHub Pages
 
-on:  
+on:
 push:
-branches: [ main ]  
+branches: [ main ]
 workflow_dispatch:
 
-permissions:  
-contents: read  
-pages: write  
+permissions:
+contents: read
+pages: write
 id-token: write
 
-jobs:  
-build:  
-runs-on: ubuntu-latest  
-steps:  
-\- name: Checkout your repository using git  
-uses: actions/checkout@v4  
-\- name: Install, build, and upload your site  
+jobs:
+build:
+runs-on: ubuntu-latest
+steps:
+\- name: Checkout your repository using git
+uses: actions/checkout@v4
+\- name: Install, build, and upload your site
 uses: withastro/action@v3
 
-deploy:  
-needs: build  
-runs-on: ubuntu-latest  
-environment:  
- name: github-pages  
- url: ${{ steps.deployment.outputs.page_url }}  
-steps:  
- \- name: Deploy to GitHub Pages  
- id: deployment  
+deploy:
+needs: build
+runs-on: ubuntu-latest
+environment:
+ name: github-pages
+ url: ${{ steps.deployment.outputs.page_url }}
+steps:
+ \- name: Deploy to GitHub Pages
+ id: deployment
  uses: actions/deploy-pages@v4
 
-</div>
+```
 
 - GitHub Repository를 생성합니다.
 
@@ -78,17 +78,6 @@ h1 {
 }
 
 
-.terminal {
-    background-color: #2d2d2d; 
-    color: #ffffff; 
-    padding: 15px 10px 10px 20px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    font-size: 17px;
-    line-height: 1.2;
-    overflow-x: auto;
-    margin: 15px 0;
-}
 </style>
 
 <script src="https://utteranc.es/client.js"

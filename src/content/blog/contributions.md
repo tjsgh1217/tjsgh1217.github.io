@@ -20,9 +20,9 @@ Local 개발 환경에서 GitHub에 **Commit/Push**를 해도 **GitHub contribut
 
 현재 설정되어 있는 `user.email` 과 `user.name` 을 확인하기 위해 아래의 명령어를 입력해줍니다.
 
-<div class="terminal">
-git config --li
-</div>
+```
+$  git config --li
+```
 
 - 우리는 Local 환경의 `defaultbranch`, `user.email`, `user.name` 등  
   Git 설정 파일에 항목들을 확인할 수 있습니다.
@@ -32,27 +32,27 @@ git config --li
 
 `user.email` 과 `user.name` 이 등록되어 있지 않아도 아래의 명령어로 등록합니다.
 
-<div class="terminal">
-
-git config --global user.email
+```
+$  git config --global user.email
 
 [GitHub user.email]
 
-git config --global user.name
+$  git config --global user.name
 
 [GitHub user.name]
-
-</div>
+```
 
 `--global` 은 Git 설정을 전역으로 지정할 때 사용하는 명령어입니다.
 
 <br>
 변경 후 다시 아래의 명령어로 변경사항을 확인합니다.
 
-<div class="terminal">
-git config -li
-</div>
+```
+$  git config -li
+```
+
  <br>
+
 이상으로 GitHub contributions commit 에러 해결 방법에 대해 알아보았습니다.
 
 ---
@@ -62,17 +62,6 @@ h1 {
     font-size: 1.8em;
     margin-bottom: 20px;
     color: #34495E;
-}
-.terminal {
-    background-color: #2d2d2d; 
-    color: #ffffff; 
-    padding: 15px 10px 10px 20px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    font-size: 17px;
-    line-height: 1.2;
-    overflow-x: auto;
-    margin: 15px 0;
 }
 </style>
 

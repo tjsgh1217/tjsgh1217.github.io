@@ -35,18 +35,16 @@ pubDate: '2024.11.14'
 
 - 테마를 설정 후 아래 있는 Enable Utterances 코드를 복사합니다.
 
-<div class="terminal">
-
-&lt;script  
-src="http<hi>s://utteranc.es/client.js"  
-repo="username/username.github.io"  
-issue-term="pathname"  
-theme="github-light"  
-crossorigin="anonymous"  
-async &gt;  
+```
+&lt;script
+src="http<hi>s://utteranc.es/client.js"
+repo="username/username.github.io"
+issue-term="pathname"
+theme="github-light"
+crossorigin="anonymous"
+async &gt;
 &lt;/script&gt;
-
-</div>
+```
 
 - **username** 에 본인의 GitHub username 을 작성합니다.
 
@@ -61,17 +59,6 @@ h1 {
 }
 
 
-.terminal {
-    background-color: #2d2d2d; 
-    color: #ffffff; 
-    padding: 15px 10px 10px 20px;
-    border-radius: 5px;
-    font-family: 'Courier New', monospace;
-    font-size: 17px;
-    line-height: 1.2;
-    overflow-x: auto;
-    margin: 15px 0;
-}
 </style>
 
 <script
